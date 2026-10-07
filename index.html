@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preload Support</title>
+  <meta name="description" content="Support and contact for Preload, the motorcycle maintenance app.">
+  <style>
+    :root {
+      --bg: #F6F3EE;
+      --surface: #FFFFFF;
+      --text: #1C1A17;
+      --text-secondary: #5C564E;
+      --accent: #F2792B;
+      --on-accent: #1C1A17;
+      --accent-text: #A83F05;
+      --divider: #E4DED4;
+      color-scheme: light dark;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0F0E0D;
+        --surface: #1A1816;
+        --text: #FBF7F0;
+        --text-secondary: #B5ADA2;
+        --accent-text: #F2792B;
+        --divider: #2E2A26;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+    .brand {
+      color: var(--accent-text);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin: 0 0 8px;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.2;
+      margin: 0 0 8px;
+    }
+    .lead {
+      color: var(--text-secondary);
+      margin: 0 0 28px;
+    }
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--divider);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 8px;
+    }
+    .contact p { margin: 0 0 14px; }
+    .button {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--on-accent);
+      font-weight: 600;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 999px;
+      overflow-wrap: anywhere;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 36px 0 8px;
+      padding-top: 24px;
+      border-top: 1px solid var(--divider);
+    }
+    h3 {
+      font-size: 17px;
+      margin: 20px 0 4px;
+    }
+    p { margin: 0 0 14px; }
+    a { color: var(--accent-text); }
+    footer {
+      margin-top: 40px;
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">Preload</p>
+    <h1>Support</h1>
+    <p class="lead">Preload keeps track of your motorcycle's maintenance,
+    modifications, tuning and riding gear.</p>
+
+    <div class="contact">
+      <p>Found a bug, have a question or want to suggest a feature? Email me
+      and I'll get back to you.</p>
+      <a class="button" href="mailto:landocansoftware@gmail.com">landocansoftware@gmail.com</a>
+    </div>
+
+    <h2>Common questions</h2>
+
+    <h3>Where is my data stored?</h3>
+    <p>Only on your device. Preload has no accounts and no server, so I can't
+    see, access or recover your records.</p>
+
+    <h3>What happens if I delete the app or change phones?</h3>
+    <p>Deleting the app deletes its data. If you set up a new phone from a
+    backup of your old one (iCloud on iPhone, Google backup on Android), your
+    records should come with it. To keep your own copy of a bike's history,
+    use the Export tab to save it as a PDF.</p>
+
+    <h3>I'm not getting reminders</h3>
+    <p>Check that notifications are allowed for Preload in your phone's
+    Settings. Reminders are sent for date-based items, such as time
+    intervals and renewals. Items due by distance appear in the app instead.</p>
+
+    <footer>
+      <a href="privacy.html">Privacy policy</a>
+    </footer>
+  </main>
+</body>
+</html>
